@@ -1,34 +1,15 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
+const helmet = require('helmet');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.use(
+  helmet.hidePoweredBy(),
+  helmet.frameguard({action: 'deny'}),
+  helmet.xssFilter(),
+  helmet.noSniff(),
+  helmet.ieNoOpen()
+);
 
 
 
