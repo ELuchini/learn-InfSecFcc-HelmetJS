@@ -4,10 +4,11 @@
 	"description": "fcc backend boilerplate",
 	"main": "server.js",
 	"scripts": {
-		"start": "node myApp.js"
+		"start": "node myApp.js",
+		"dev": "nodemon node myApp.js"
 	},
 	"dependencies": {
-		"express": "^4.14.0",
+		"express": "^4.21.2",
 		"helmet": "3.21.3"
 	},
 	"keywords": [
@@ -16,5 +17,8 @@
 		"express",
 		"freecodecamp"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"nodemon": "^3.1.10"
+	}
 }
