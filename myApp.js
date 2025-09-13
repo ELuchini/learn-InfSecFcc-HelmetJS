@@ -11,7 +11,8 @@ app.use(
   helmet.noSniff(),
   helmet.ieNoOpen(),
   helmet.hsts({maxAge: ninetyDaysInSeconds, force: true}),
-  helmet.dnsPrefetchControl()
+  helmet.dnsPrefetchControl(),
+  helmet.noCache()
 );
 
 
